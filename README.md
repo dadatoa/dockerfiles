@@ -1,8 +1,19 @@
-des dockerfiles pour mes projects
+# des dockerfiles pour mes projects
 
-créer image
+## créer image
 
 ```bash
 $ docker build -t monimage:tag . #(exemple tag : version)
 ```
 
+## lister les images locales
+
+```bash
+$ docker ls
+```
+
+## lancer un container avec monimage
+
+```bash
+$ docker run -tid --name moncontainer monimage:tag
+```
