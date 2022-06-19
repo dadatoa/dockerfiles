@@ -17,3 +17,7 @@ $ docker ls
 ```bash
 $ docker run -tid --name moncontainer monimage:tag
 ```
+
+## lancer un terminal dans le container
+
+docker exec -ti moncontainer /bin/bash

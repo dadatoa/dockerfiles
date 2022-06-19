@@ -1,7 +1,7 @@
 FROM ruby
 
 RUN gem install --force bundler
-RUN gem install jekyll webrick rouge jekyll-feed
+# RUN gem install jekyll webrick rouge jekyll-feed
 RUN gem install github-pages
 
 WORKDIR /srv/jekyll
