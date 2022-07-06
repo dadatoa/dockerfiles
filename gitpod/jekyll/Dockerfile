@@ -1,4 +1,4 @@
-FROM ruby:2-slim
+FROM ruby:2
 
 RUN gem install --force bundler
 RUN gem install jekyll jekyll-feed webrick jekyll-seo-tag rexml minima rouge jemoji
