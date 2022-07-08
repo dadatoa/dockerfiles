@@ -1,17 +1,17 @@
-FROM debian:bookworm-slim
+FROM ruby:2-slim
 
 RUN echo "APT::Get::Assume-Yes "true";" >> /etc/apt/apt.conf.d/90forceyes
 
 RUN apt-get update
 RUN apt-get install build-essential
-RUN apt-get install ruby \
-    ruby-dev \
+#RUN apt-get install ruby \
+    # ruby-dev \
     # ruby-execjs \
     # ruby-pygments.rb \
     # locales \
-    git
+    # git
 
-RUN gem install github-pages && apt-get purge -y -q --autoremove \
+RUN gem install bundler github-pages && apt-get purge -y -q --autoremove \
     gcc \
     g++ \
     make \
