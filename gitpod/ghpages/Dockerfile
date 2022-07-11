@@ -11,7 +11,7 @@ RUN apt-get install ruby \
     # locales \
     git
 
-RUN gem install github-pages && apt-get purge -y -q --autoremove \
+RUN gem install bundler github-pages && apt-get purge -y -q --autoremove \
     gcc \
     g++ \
     make \
